@@ -1,0 +1,159 @@
+.analyst-recs {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+.recs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recs-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.consensus-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.consensus-badge svg {
+    width: 14px;
+    height: 14px;
+}
+
+.consensus-badge.strong-buy {
+    background: rgba(0, 227, 150, 0.2);
+    color: #00e396;
+}
+
+.consensus-badge.buy {
+    background: rgba(0, 227, 150, 0.1);
+    color: #00e396;
+}
+
+.consensus-badge.hold {
+    background: rgba(255, 178, 0, 0.1);
+    color: #ffb200;
+}
+
+.consensus-badge.sell {
+    background: rgba(255, 69, 96, 0.1);
+    color: #ff4560;
+}
+
+.consensus-badge.strong-sell {
+    background: rgba(255, 69, 96, 0.2);
+    color: #ff4560;
+}
+
+.recs-chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recs-bar {
+    height: 12px;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.bar-segment {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.bar-segment.strong-buy {
+    background: #00c853;
+}
+
+.bar-segment.buy {
+    background: #64dd17;
+}
+
+.bar-segment.hold {
+    background: #ffb200;
+}
+
+.bar-segment.sell {
+    background: #ff5252;
+}
+
+.bar-segment.strong-sell {
+    background: #d50000;
+}
+
+.recs-legend {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot.strong-buy {
+    background: #00c853;
+}
+
+.dot.buy {
+    background: #64dd17;
+}
+
+.dot.hold {
+    background: #ffb200;
+}
+
+.dot.sell {
+    background: #ff5252;
+}
+
+.dot.strong-sell {
+    background: #d50000;
+}
+
+.recs-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 1rem;
+}
+
+.analyst-recs-empty {
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--text-tertiary);
+}
+
+.analyst-recs-empty h4 {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
